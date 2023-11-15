@@ -16,13 +16,17 @@ pip install -r requirements.txt
 ```
 python upload_telegram.py
 ```
-Чтобы получить изображения NASA, нужно написать вот эту команду:
+Чтобы получить изображения NASA, нужно скопировать вот эту команду:
 ```
 python nasa_get.py
 ```
 Чтобы получить изображения EPIC, нужно скопировать эту команду:
 ```
-python epic_nasa.py
+python fetch_epic_nasa.py
+```
+Чтобы получить изображения Spacex, нужно скопировать эту команду:
+```
+python fetch_spacex_images.py
 ```
 ### Переменные окружения 
 
