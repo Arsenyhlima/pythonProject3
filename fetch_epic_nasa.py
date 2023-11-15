@@ -4,10 +4,10 @@ from datetime import datetime
 from download_picture import download_picture 
 
 
-def fetch_epic_nasa(count_nasa, api_key):
+def fetch_epic_nasa(nasa_count, api_key):
     params = {
         "api_key": api_key,
-        "count": count_nasa,
+        "count": nasa_count,
     }
     response = requests.get("https://api.nasa.gov/EPIC/api/natural/image", params=params)
     response.raise_for_status()
@@ -24,7 +24,7 @@ def fetch_epic_nasa(count_nasa, api_key):
 def main():
     nasa_count = 30
     api_key = os.environ['NASA_TOKEN']
-    fetch_epic_nasa(count_nasa, api_key)
+    fetch_epic_nasa(nasa_count, api_key)
 
 
 if __name__ == "__main__":
