@@ -21,7 +21,7 @@ def main():
     url = f"https://api.spacexdata.com/v5/launches/{launch_id}"
     response = requests.get(url)
     response.raise_for_status()
-    fetch_spacex_last_launch(args.id)
+    fetch_spacex_last_launch(args.url)
 
 
 if __name__ == "__main__":
