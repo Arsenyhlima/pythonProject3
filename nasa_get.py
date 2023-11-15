@@ -13,10 +13,10 @@ def extract_format_from_link(link):
     return format, file_name
 
 
-def nasa_get(count_nasa, api_key):
+def nasa_get(nasa_count, api_key):
     payload = {
         "api_key": api_key,
-        "count": count_nasa,
+        "count": nasa_count,
     }
     response = requests.get("https://api.nasa.gov/planetary/apod", params=payload)
     response.raise_for_status()
@@ -32,9 +32,9 @@ def nasa_get(count_nasa, api_key):
 
 
 def main():
-    count_nasa = 30
+    nasa_count = 30
     api_key = os.environ['NASA_TOKEN']
-    nasa_get(count_nasa, api_key)
+    nasa_get(nasa_count, api_key)
 
 
 if __name__ == "__main__":
