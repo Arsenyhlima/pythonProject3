@@ -22,7 +22,7 @@ def fetch_epic_nasa(count_nasa, api_key):
 
 
 def main():
-    count_nasa = 30
+    nasa_count = 30
     api_key = os.environ['NASA_TOKEN']
     fetch_epic_nasa(count_nasa, api_key)
 
