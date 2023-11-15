@@ -8,11 +8,11 @@ from nasa_get import nasa_get
 
 
 def main():
-    count_nasa = 30
+    nasa_count = 30
     count_url = 5
     api_key = os.environ['NASA_TOKEN']
     fetch_epic_nasa(count_url, api_key)
-    nasa_get(count_nasa, api_key)
+    nasa_get(nasa_count, api_key)
     os.makedirs("images", exist_ok=True)
     telegram_token = os.environ['TG_TOKEN']
     time = os.environ["TIME_REPEAT"]
