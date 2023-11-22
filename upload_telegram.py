@@ -11,9 +11,6 @@ def main():
     nasa_count = 30
     url_count = 5
     api_key = os.environ['NASA_TOKEN']
-    fetch_epic_nasa(url_count, api_key)
-    nasa_get(nasa_count, api_key)
-    os.makedirs("images", exist_ok=True)
     telegram_token = os.environ['TG_TOKEN']
     time = os.environ["TIME_REPEAT"]
     default_time = 14400
