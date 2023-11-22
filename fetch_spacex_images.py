@@ -18,7 +18,7 @@ def main():
     parser = argparse.ArgumentParser(description="Этот скрипт загружает фото от SpaceX по указанному id запуска")
     parser.add_argument('--id', default=launch_id, help='id запуска, по которому загружается фото от SpaceX', dest="id")
     args = parser.parse_args()
-    fetch_spacex_last_launch(args.url)
+    fetch_spacex_last_launch(args.id)
 
 
 if __name__ == "__main__":
